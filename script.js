@@ -1,20 +1,19 @@
 const spec = {
   $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-  description: 'A simple bar chart with embedded data.',
   data: {
     values: [
-      { a: 'A', b: 28 },
-      { a: 'B', b: 55 },
-      { a: 'C', b: 43 },
-      { a: 'D', b: 91 },
-      { a: 'E', b: 81 },
-      { a: 'F', b: 53 },
-      { a: 'G', b: 19 },
-      { a: 'H', b: 87 },
+      { a: 'A', b: 18 },
+      { a: 'B', b: 25 },
+      { a: 'C', b: 33 },
+      { a: 'D', b: 51 },
+      { a: 'E', b: 61 },
+      { a: 'F', b: 13 },
+      { a: 'G', b: 49 },
+      { a: 'H', b: 37 },
       { a: 'I', b: 52 },
     ],
   },
-  mark: 'bar',
+  mark: 'circle',
   encoding: {
     x: { field: 'a', type: 'ordinal' },
     y: { field: 'b', type: 'quantitative' },
@@ -23,10 +22,10 @@ const spec = {
 
 // The first opption the id for the div -> #vis
 // the second option is for the spec
-vegaEmbed('#vis', spec);
+vegaEmbed('#v1', spec);
 
 // For the Second Spec
-vegaEmbed('#vis2', 'bigFilterSpec.json');
+vegaEmbed('#v2', 'bigFilterSpec.json');
 
 // For the third Spec
-vegaEmbed('#vis3', 'filterSpec.json');
+vegaEmbed('#v3', 'filterSpec.json');
