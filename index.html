@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>exercise 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="lakshay ahooja" />
+    <meta name="description" content="data viz" />
+    <meta property="og:title" content="data viz" />
+    <meta property="og:description" content="Brief description" />
+    <meta property="og:image" content="/some-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="image description" />
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+  </head>
+
+  <body>
+    <h1>compilation</h1>
+
+    <h2>Static Vis Image</h2>
+    <object type="image/svg+xml" data="visualization.svg"></object>
+    <img src="/v1.svg" width="200px"/>
+
+    <h2>Simple Vis Embed</h2>
+    <div id="vis"></div>
+
+    <h2>Vis with combined Spec & Data</h2>
+    <div id="vis2"></div>
+
+    <h2>Vis with seperate Spec & Data</h2>
+    <div id="vis3"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
